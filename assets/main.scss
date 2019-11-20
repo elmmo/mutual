@@ -1,0 +1,15 @@
+---
+# Compiled scss to be converted by Jekyll
+---
+
+// OUTSIDE IMPORTS 
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Blinker&display=swap');
+
+// SHEET IMPORTS 
+@import "variables.scss"; 
+@import "placeholders.scss";
+@import "mixins.scss";
+@import "site.scss"; 
+@import "header.scss";
+@import "panel.scss"; 

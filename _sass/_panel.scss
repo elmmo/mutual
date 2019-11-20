@@ -1,0 +1,36 @@
+.container {
+    margin: 20vh 0 20vh 0;
+    height: 56vh; 
+    .info-panel {
+        padding: 4vw;
+        display: flex; 
+        @extend %info-panel-font-style; 
+    }
+    .info-panel:nth-child(odd) {
+        @include coloredBox(rgba(255, 218, 185, 0.247), orange); 
+    } 
+    .info-panel:nth-child(even) {
+        margin-left: 8vw; 
+        position: absolute; 
+        right: 0; 
+        @include coloredBox(rgba(156, 201, 255, 0.469), blue); 
+    }
+    .box-panel {
+        width: 38vw; 
+        display: inline-block; 
+        position: relative; 
+    }
+    div[id^="particles-"] {
+        margin-left: 8vw; 
+    }
+}
+.full-panel {
+    height: 100vh; 
+    width: 100vw; 
+}
+.wideset-panel {
+    padding: 4vh 4vw; 
+    margin: 15vh 4vw; 
+    @include coloredBox(rgba(196, 255, 193, 0.469), rgb(0, 255, 136)); 
+    @extend %info-panel-font-style; 
+}

@@ -1,0 +1,12 @@
+%info-panel-font-style {
+    p {
+        font-family: $loose-text; 
+        letter-spacing: 0.05em; 
+    }
+    p:first-child {
+        font-family: $title-text; 
+        text-transform: uppercase; 
+        font-size: 2em; 
+        letter-spacing: 0; 
+    }
+}

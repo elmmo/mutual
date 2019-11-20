@@ -1,0 +1,32 @@
+#particles-header {
+    background-color: $dark-accent;
+}
+#landing-header {
+    display: flex; 
+    justify-content: center; 
+    span {
+        color: white; 
+        position: absolute; 
+        font-family: $loose-text;  
+    }
+    .block-line-1 {
+        font-size: 2em; 
+    }
+    .block-line-2 {
+        font-size: 5em; 
+    }
+    .block-line-3 {
+        font-size: 10em; 
+        font-family: $title-text; 
+    }
+    .block-line-4 {
+        top: 80vh; 
+        font-size: 2em; 
+        color: rgba(128, 128, 128, 0.434); 
+    }
+}
+@for $i from 1 through $block-line-count {
+    .block-line-#{$i} {
+        top: 15vh*$i; 
+    }
+}

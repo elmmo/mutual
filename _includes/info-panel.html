@@ -1,0 +1,17 @@
+<div class="container">
+    {% if include.align == "right" %} <!-- if the text is aligned right -->
+    <div id="particles-{{include.color}}" class="box-panel"></div>
+    {% endif %}
+    <div class="box-panel info-panel">
+        <p class="title-text">{{ include.section-title }}</p>
+        <p class="body-text">{{ include.content-1 }}
+            {% if include.link-text != "null" %}
+                <a href="{{include.link}}" target="_launch">{{include.link-text}}</a>
+            {% endif %}
+        </p>
+        <p class="body-text">{{ include.content-2 }}</p>
+    </div>
+    {% if include.align == "left" %} <!-- if the text is aligned left -->
+    <div id="particles-{{include.color}}" class="box-panel"></div>
+    {% endif %}
+</div>
