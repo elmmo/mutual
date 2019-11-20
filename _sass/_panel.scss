@@ -5,6 +5,15 @@
         padding: 4vw;
         display: flex; 
         @extend %info-panel-font-style; 
+        a {
+            color: black; 
+            &:hover {
+                color: blue; 
+            }
+            &:visited {
+                color: black; 
+            }
+        }
     }
     .info-panel:nth-child(odd) {
         @include coloredBox(rgba(255, 218, 185, 0.247), orange); 

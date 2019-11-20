@@ -1,5 +1,14 @@
 #particles-header {
     background-color: $dark-accent;
+    a {
+        color: rgba(172, 172, 172, 0.747); 
+        &:visited {
+            color: $light-gray; 
+        }
+        &:hover {
+            color: rgba(172, 172, 172, 0.747);
+        }
+    }
 }
 #landing-header {
     display: flex; 
