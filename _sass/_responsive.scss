@@ -1,0 +1,71 @@
+// responsive design for most phone and tablet ratios -- will carry over into slim styling (see below) 
+@media screen and (max-aspect-ratio: 5/6) {
+    #landing-header {
+        .block-line-1 {
+            top: 18vh;
+            font-size: 2.5em;  
+        }
+        .block-line-2 {
+            top: 35vh; 
+        }
+        .block-line-3 {
+            font-size: 11em;
+        }
+        .block-line-4 {
+            top: 74vh;
+            font-size: 2.5em; 
+            color: white; 
+            a {
+                color: white; 
+            }
+        }
+    }
+    .container {
+        margin: 1vh 0;  
+        height: 35vh; 
+        .box-panel {
+            height: 25vh; 
+            width: 80vw; 
+            padding: 2vh 4vw; 
+            margin: 5vh 6vw; 
+            position: static; 
+            p {
+                font-size: 1.5em; 
+            }
+        }
+        div[id^="particles-"] {
+            display: none; 
+        }
+    }
+    .wideset-panel {
+        height: 15vh; 
+        width: 80vw; 
+        padding: 2vh 4vw; 
+        margin: 5vh 6vw; 
+        position: static; 
+        p {
+            font-size: 1.5em; 
+        }
+    }
+}
+
+// slim styling
+// for when the screen becomes ridiculously long (i.e., Pixel 2, iPhone X) 
+@media screen and (max-aspect-ratio: 9/16) {
+    #particles-header {
+        height: 70vh; 
+        .block-line-1 {
+            top: 15vh;
+            font-size: 2.5em;  
+        }
+        .block-line-2 {
+            top: 25vh; 
+        }
+        .block-line-3 {
+            top: 32vh; 
+        }
+        .block-line-4 {
+            top: 53vh;
+        }
+    }
+}
